@@ -82,6 +82,6 @@ filename = 'lab01.s'
 #for reg in coreDumpData['registers']['integer'].keys():
 #    print("x%2s 0x%x (%d)" %(reg, coreDumpData['registers']['integer'][reg], coreDumpData['registers']['integer'][reg]))
 
-# Check the expected results and print any differences
+# Check the expected results and print any  differences
 for line in checkSimResults(expected, coreDumpData, labelMap):
     print(line)

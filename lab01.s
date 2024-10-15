@@ -13,6 +13,7 @@ matric: # Words ending with ':' are **labels**
         # Try to keep label names short
         .word 4712  # This directive reserves enough space for a word in memory
                   #  and initializes it with the specific value.
+				  
 matricplus1:
         .word 0   
 
@@ -55,7 +56,7 @@ prog:   # Labels in code are used for control flow: if/then/else, loops, etc.
         #  test.
         # Labels do not take up space in memory. They are only used by the assembler
 
-        lw         s0, 0(a0)       
+        lw         s0, 0(a0)       # Get value of matric into register s0. lw - load data
         
         lw         s1, 0(a1)       # s1 gets the value of var1. a1 has the address of var1
         add        s1, s1,   s0    # s1 = var1 + s0
